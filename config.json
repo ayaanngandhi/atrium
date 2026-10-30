@@ -35,6 +35,12 @@
       "note": "Streaming web UI"
     },
     {
+      "slug": "trace",
+      "port": 5665,
+      "name": "Trace",
+      "note": "Media provenance inspector — C2PA, SynthID, metadata"
+    },
+    {
       "slug": "pihole",
       "port": 8090,
       "path": "/admin",
