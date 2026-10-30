@@ -1,0 +1,25 @@
+[Unit]
+Description=Atrium - LAN entry hall and path router on :80
+Documentation=https://github.com/ayaanngandhi/atrium
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=mac
+Group=mac
+WorkingDirectory=/home/mac/atrium
+ExecStart=/usr/bin/python3.12 /home/mac/atrium/atrium.py
+Restart=always
+RestartSec=2
+
+# Port 80 needs a privileged bind. This grants exactly that and nothing else,
+# to a process that still runs as an ordinary user.
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+
+StandardOutput=append:/home/mac/atrium/atrium.log
+StandardError=append:/home/mac/atrium/atrium.log
+
+[Install]
+WantedBy=multi-user.target

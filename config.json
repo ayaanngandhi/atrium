@@ -1,0 +1,99 @@
+{
+  "title": "Atrium",
+  "advertise": "192.168.68.129",
+  "listen": {
+    "host": "0.0.0.0",
+    "port": 80
+  },
+  "upstream": "http://127.0.0.1:8081",
+  "board_hosts": ["192.168.68.129", "localhost", "127.0.0.1"],
+  "passthrough_hosts": ["rasoi.mac", "stremio.mac", "rasoi.ayaanngandhi.in"],
+  "routes": [
+    {
+      "slug": "zingy",
+      "port": 4321,
+      "name": "Zingy",
+      "note": "Video and audio downloader · Android app + web"
+    },
+    {
+      "slug": "rasoi",
+      "port": 8600,
+      "name": "Rasoi",
+      "note": "Mom's recipes, weekly menu and shopping list"
+    },
+    {
+      "slug": "plex",
+      "port": 32400,
+      "path": "/web",
+      "name": "Plex",
+      "note": "Movies, shows and music"
+    },
+    {
+      "slug": "stremio",
+      "port": 8088,
+      "name": "Stremio",
+      "note": "Streaming web UI"
+    },
+    {
+      "slug": "pihole",
+      "port": 8090,
+      "path": "/admin",
+      "name": "Pi-hole",
+      "note": "DNS and ad blocking for the whole house"
+    },
+    {
+      "slug": "tank",
+      "port": 8080,
+      "name": "qBittorrent",
+      "note": "Downloads"
+    },
+    {
+      "slug": "hermes",
+      "port": 9119,
+      "name": "Hermes",
+      "note": "Agent dashboard, chat and cron control"
+    },
+    {
+      "slug": "docs",
+      "port": 8900,
+      "name": "Docs",
+      "note": "HTML documents and reports"
+    },
+    {
+      "slug": "saarthi",
+      "port": 3002,
+      "name": "Saarthi",
+      "note": "Chatbot dashboard (dev tree)"
+    },
+    {
+      "slug": "gitea",
+      "port": 6105,
+      "name": "Gitea",
+      "note": "Local git server"
+    },
+    {
+      "slug": "emporio",
+      "port": 3300,
+      "name": "Emporio",
+      "note": "Youth summit editorial site"
+    },
+    {
+      "slug": "soulstudio",
+      "port": 8430,
+      "name": "Soul Studio",
+      "note": "Reel editing studio"
+    },
+    {
+      "slug": "mun",
+      "port": 4422,
+      "name": "Leisure MUN",
+      "note": "Conference site preview"
+    },
+    {
+      "slug": "clinic",
+      "port": 3400,
+      "name": "Pet Clinic",
+      "note": "Faridabad Pet Clinic landing page"
+    }
+  ]
+}

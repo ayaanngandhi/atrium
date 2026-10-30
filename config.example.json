@@ -1,0 +1,38 @@
+{
+  "title": "Atrium",
+  "advertise": "192.168.1.10",
+  "listen": {
+    "host": "0.0.0.0",
+    "port": 80
+  },
+  "upstream": "http://127.0.0.1:8081",
+  "board_hosts": ["192.168.1.10", "localhost", "127.0.0.1"],
+  "passthrough_hosts": [],
+  "routes": [
+    {
+      "slug": "jellyfin",
+      "port": 8096,
+      "name": "Jellyfin",
+      "note": "Films and TV"
+    },
+    {
+      "slug": "photos",
+      "port": 2342,
+      "name": "Immich",
+      "note": "Photo library"
+    },
+    {
+      "slug": "dns",
+      "port": 8090,
+      "path": "/admin",
+      "name": "Pi-hole",
+      "note": "DNS and ad blocking"
+    },
+    {
+      "slug": "downloads",
+      "port": 8080,
+      "name": "qBittorrent",
+      "note": "Downloads"
+    }
+  ]
+}
