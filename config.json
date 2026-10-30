@@ -72,12 +72,6 @@
       "note": "Chatbot dashboard (dev tree)"
     },
     {
-      "slug": "gitea",
-      "port": 6105,
-      "name": "Gitea",
-      "note": "Local git server"
-    },
-    {
       "slug": "emporio",
       "port": 3300,
       "name": "Emporio",
